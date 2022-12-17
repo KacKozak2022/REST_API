@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\REST_API",
+    "\\REST_API\\app",
+    "\\REST_API\\app\\Http",
+    "\\REST_API\\app\\Models",
+    "\\REST_API\\bootstrap",
+    "\\REST_API\\config",
+    "\\REST_API\\database",
+    "\\REST_API\\public",
+    "\\REST_API\\resources"
+  ],
+  "SelectedNode": "\\REST_API\\app\\Http\\Kernel.php",
+  "PreviewInSolutionExplorer": false
+}
