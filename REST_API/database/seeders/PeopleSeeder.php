@@ -11,10 +11,6 @@ class PeopleSeeder extends Seeder
 {
     public function run()
     {
-        People::factory()
-            ->count(50)
-            ->hasContacts(1)
-            ->hasLocations(1)
-            ->create();
+        People::factory()->count(50)->hasLocations(1)->create();
     }
 }

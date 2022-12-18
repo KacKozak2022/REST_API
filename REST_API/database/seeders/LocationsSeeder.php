@@ -12,10 +12,6 @@ class LocationsSeeder extends Seeder
 
     public function run()
     {
-        Locations::factory()
-         ->count(50)
-         ->create(['people_id' => function () {
-             return People::inRandomOrder()->first()->id;
-         }]);
+       
     }
 }

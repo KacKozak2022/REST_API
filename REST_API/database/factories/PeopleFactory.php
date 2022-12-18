@@ -12,7 +12,9 @@ class PeopleFactory extends Factory
     {
         return [
             'name' => $this->faker->firstName(),
-            'last_name' => $this->faker->lastName()
+            'last_name' => $this->faker->lastName(),
+            'phone_number' => $this->faker->e164PhoneNumber(),
+            'email' => $this->faker->email()
         ];
     }
 }

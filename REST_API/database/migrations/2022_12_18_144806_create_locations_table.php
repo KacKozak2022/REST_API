@@ -10,10 +10,11 @@ return new class extends Migration
     {
         Schema::create('locations', function (Blueprint $table) {
             $table->id();
+            $table->integer('people_id');
+            $table->foreign('people_id')->references('id')->on('people');
             $table->text('address');
             $table->text('city');
             $table->text('country');
-            $table->unsignedInteger('people_id');
             $table->timestamps();
         });
 
