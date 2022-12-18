@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use App\Models\People;
-use Illuminate\Http\Request;
+use App\Http\Requests\StorePeopleRequest;
+use App\Http\Requests\UpdatePeopleRequest;
 
 class PeopleController extends Controller
 {
@@ -31,10 +31,10 @@ class PeopleController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Http\Requests\StorePeopleRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StorePeopleRequest $request)
     {
         //
     }
@@ -64,11 +64,11 @@ class PeopleController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Http\Requests\UpdatePeopleRequest  $request
      * @param  \App\Models\People  $people
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, People $people)
+    public function update(UpdatePeopleRequest $request, People $people)
     {
         //
     }
