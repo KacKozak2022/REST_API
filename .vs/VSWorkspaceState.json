@@ -4,13 +4,13 @@
     "\\REST_API",
     "\\REST_API\\app",
     "\\REST_API\\app\\Http",
-    "\\REST_API\\app\\Models",
-    "\\REST_API\\bootstrap",
-    "\\REST_API\\config",
+    "\\REST_API\\app\\Http\\Controllers",
+    "\\REST_API\\app\\Http\\Requests",
+    "\\REST_API\\app\\Http\\Resources",
     "\\REST_API\\database",
-    "\\REST_API\\public",
-    "\\REST_API\\resources"
+    "\\REST_API\\database\\factories",
+    "\\REST_API\\database\\migrations"
   ],
-  "SelectedNode": "\\REST_API\\app\\Http\\Kernel.php",
+  "SelectedNode": "\\REST_API\\database\\migrations\\2022_12_18_144517_create_people_table.php",
   "PreviewInSolutionExplorer": false
 }

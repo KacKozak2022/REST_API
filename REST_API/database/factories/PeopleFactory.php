@@ -2,22 +2,19 @@
 
 namespace Database\Factories;
 
+use App\Models\Contacts;
+use App\Models\Locations;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-/**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\People>
- */
 class PeopleFactory extends Factory
 {
-    /**
-     * Define the model's default state.
-     *
-     * @return array<string, mixed>
-     */
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->firstName(),
+            'last_name' => $this->faker->lastName(),
+            'contacts_id' => Contacts::factory(),
+            'locations_id' => Locations::factory()
         ];
     }
 }

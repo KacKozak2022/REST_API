@@ -9,7 +9,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('people', function (Blueprint $table) {
-            $table->increments('people_id');
+            $table->id('people_id');
             $table->string('name');
             $table->string('last_name');
             $table->unsignedInteger('contacts_id');
