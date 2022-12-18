@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\People;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ContactsFactory extends Factory

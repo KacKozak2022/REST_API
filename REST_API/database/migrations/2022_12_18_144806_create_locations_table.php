@@ -9,12 +9,14 @@ return new class extends Migration
     public function up()
     {
         Schema::create('locations', function (Blueprint $table) {
-            $table->id('locations_id');
-            $table->string('address');
-            $table->string('city');
-            $table->string('country');
+            $table->id();
+            $table->text('address');
+            $table->text('city');
+            $table->text('country');
+            $table->unsignedInteger('people_id');
             $table->timestamps();
         });
+
     }
 
     public function down()
