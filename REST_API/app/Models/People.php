@@ -9,10 +9,6 @@ class People extends Model
 {
     use HasFactory;
 
-    //public function contacts()
-    //{
-    //    return $this->hasMany(Contacts::class);
-    //}
     public function locations()
     {
         return $this->hasMany(Locations::class);
